@@ -45,31 +45,39 @@ body
 .clearfix
 	clear: both
 
-h1, h2
+h1, h2, h3
 	text-transform: uppercase
 	line-height: 1.5
 	text-align: center
+	font-family: "OpenSansBold",sans-serif
 
 h1
-	font-size: 22px
-	font-family: "OpenSansBold", sans-serif
+	font-size: 24px
 
 h2
-	margin-top: 0
-	font-size: 15px
-	font-family: "OpenSansSemibold", sans-serif
-	span
-		padding: 5px
-		background-color: $accent
+	font-size: 22px
+
+h3
+	font-size: 20px
+	color: $accent
 
 .header
-	background-color: $bg
-	height: 100vh
+	background: $bg url(../img/pattern-3.png)
 	color: #ffffff
 	img
 		max-width: 100%
 	h1
 		margin: 30px 0 0 0 
+	p.top_text
+		margin-top: 0
+		font-size: 15px
+		text-align: center
+		text-transform: uppercase
+		font-family: "OpenSansSemibold",sans-serif
+		span
+			padding: 5px
+			background-color: $accent
+
 
 .header_form
 	margin-top: 100px
@@ -77,7 +85,7 @@ h2
 	border-radius: 10px
 	box-sizing: content-box
 	background-color: #3b2d55
-	background-image: url("../img/Pattern.png")
+	background-image: url(../img/Pattern.png)
 	box-shadow: 0px 2px 10px 0px #251a39
 	text-align: center
 	padding: 10px 0 40px
@@ -104,7 +112,30 @@ h2
 		box-shadow: 0px 5px #791800
 	input[type="text"]:focus,
 	input[type="email"]:focus
-		background-color: #fff
+		background-color: #ececec
 
+.why_meditation
+	background: #fff url(../img/tr.png) no-repeat scroll center top
+	text-align: center
+	padding: 20px 0 0 0
+	h2
+		color: #3b2d55
+		margin-bottom: 40px
+	h3
+		margin-top: 10px
+	p
+		font-size: 16px
+		color: $bg
+	.arrow
+		background: url(../img/tr_1.png) no-repeat scroll center bottom
+		height: 40px
+
+.author
+	padding: 20px 0 30px 0
+	color: #fff
+	background: $bg url(../img/pattern-3.png)
+	img
+		max-width: 100%
+		border-radius: 60px
 
 @import "media" // Всегда в конце
